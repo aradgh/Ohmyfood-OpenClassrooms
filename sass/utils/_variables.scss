@@ -1,5 +1,6 @@
 // Colors
 $color-primary: #9356dc;
+$color-primary-light: #ff79da;
 $color-secondary: #99e2d0;
 $color-secondary-dark: #008766;
 
@@ -9,18 +10,22 @@ $background-color-tertiary: #353535;
 
 $icon-color: #7e7e7e;
 
-$button-gradient: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+$button-gradient: linear-gradient(
+  0deg,
+  $color-primary -11.44%,
+  $color-primary-light 123.93%
+);
 $button-gradient-hover: linear-gradient(
     0deg,
     rgba(255, 255, 255, 0.15),
     rgba(255, 255, 255, 0.15)
   ),
-  linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  linear-gradient(0deg, $color-primary -5.2%, $color-primary-light 110.74%);
 
 $icon-gradient-hover: linear-gradient(
   193.33deg,
-  #9356dc -11.44%,
-  #ff79da 123.93%
+  $color-primary -11.44%,
+  $color-primary-light 123.93%
 );
 
 // Font-sizes
@@ -39,6 +44,5 @@ $medium: 500;
 $bold: 700;
 
 // Font-family
-$base: 'Roboto', sans-serif;
-$title: 'Shrikhand', cursive;
-
+$default: "Roboto", sans-serif;
+$title: "Shrikhand", cursive;
