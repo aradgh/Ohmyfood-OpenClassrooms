@@ -1,0 +1,44 @@
+// Colors
+$color-primary: #9356dc;
+$color-secondary: #99e2d0;
+$color-secondary-dark: #008766;
+
+$background-color-primary: #f6f6f6;
+$background-color-secondary: #eaeaea;
+$background-color-tertiary: #353535;
+
+$icon-color: #7e7e7e;
+
+$button-gradient: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+$button-gradient-hover: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.15)
+  ),
+  linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+
+$icon-gradient-hover: linear-gradient(
+  193.33deg,
+  #9356dc -11.44%,
+  #ff79da 123.93%
+);
+
+// Font-sizes
+$base: 1rem; //J'utilise rem car la font-size va s'adapter au système de l'utilisateur et aux préférences de son navigateur
+$header-title: 1.875rem;
+$page-title: 1.75rem;
+$section-title: 1.5rem;
+$subtitle: 1.125rem;
+$caption: 1.063rem;
+$description: 0.94rem; // J'ai utilisé un convertisseur PX to REM qui m'a donné ces résultats précis
+
+// Font-weight
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+// Font-family
+$base: 'Roboto', sans-serif;
+$title: 'Shrikhand', cursive;
+
