@@ -42,8 +42,6 @@
   padding: 40px;
 }
 .hero__title {
-  font-weight: 700;
-  font-size: 1.5rem;
   padding: 0 0.75rem;
   height: 4.25rem;
 }
@@ -67,6 +65,45 @@
 .hero__btn:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(0deg, #9356dc -5.2%, #ff79da 110.74%);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+}
+
+.tutorial {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem 2.032rem 2.688rem;
+}
+.tutorial__step {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 23px;
+  font-weight: 500;
+  width: 322.49px;
+  height: 72.38px;
+  background: #f6f6f6;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  margin-top: 25px;
+}
+.tutorial__step__icon {
+  color: #7e7e7e;
+}
+.tutorial__step__icon--purple {
+  color: #9356dc;
+}
+.tutorial__step__number {
+  background-color: #9356dc;
+  color: white;
+  font-size: 14.18px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin-left: -12px;
 }
 
 /*# sourceMappingURL=style.css.map */
