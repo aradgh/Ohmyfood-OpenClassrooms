@@ -51,6 +51,9 @@
   justify-content: center;
   flex-direction: column;
   padding: 3rem 2.032rem 4.25rem;
+  &__title {
+    margin-left: -0.875rem;
+  }
   &__step {
     display: flex;
     flex-direction: row-reverse;
@@ -88,6 +91,9 @@
 .restaurants {
   padding: 3.375rem 1.125rem 4.125rem;
   background-color: $background-color-primary;
+  &__title {
+    margin-left: 0.125rem;
+  }
   &__card {
     display: flex;
     flex-direction: column;

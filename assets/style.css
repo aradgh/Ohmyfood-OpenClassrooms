@@ -73,6 +73,9 @@
   flex-direction: column;
   padding: 3rem 2.032rem 4.25rem;
 }
+.tutorial__title {
+  margin-left: -0.875rem;
+}
 .tutorial__step {
   display: flex;
   flex-direction: row-reverse;
@@ -109,6 +112,9 @@
 .restaurants {
   padding: 3.375rem 1.125rem 4.125rem;
   background-color: #f6f6f6;
+}
+.restaurants__title {
+  margin-left: 0.125rem;
 }
 .restaurants__card {
   display: flex;
