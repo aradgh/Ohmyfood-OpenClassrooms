@@ -50,7 +50,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 3rem 2.032rem 2.688rem;
+  padding: 3rem 2.032rem 4.25rem;
   &__step {
     display: flex;
     flex-direction: row-reverse;
@@ -65,10 +65,10 @@
     border-radius: 20px;
     margin-top: 25px;
     &__icon {
-        color: $icon-color;
-        &--purple {
-            color: $color-primary
-        }
+      color: $icon-color;
+      &--purple {
+        color: $color-primary;
+      }
     }
     &__number {
       background-color: #9356dc;
@@ -83,4 +83,79 @@
       margin-left: -12px;
     }
   }
+}
+
+.restaurants {
+  padding: 3.375rem 1.125rem 4.125rem;
+  background-color: $background-color-primary;
+  &__card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+    height: 15.688rem;
+    background: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-decoration: none;
+    color: inherit;
+    &--new {
+      position: relative;
+    }
+    &--new::before {
+      content: "Nouveau";
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $color-secondary;
+      color: $color-secondary-dark;
+      font-weight: $medium;
+      font-size: $new-badge;
+      border-radius: 2px;
+      padding: 0.375rem 0.563rem;
+      top: 1.25rem;
+      right: 1.25rem;
+    }
+    &__img {
+      object-fit: cover;
+      object-position: center;
+      overflow: hidden;
+      height: 75%;
+      border-radius: 15px 15px 0 0;
+    }
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      &__text {
+        font-size: $subtitle;
+        padding: 1rem 0.813rem;
+        &__location {
+          font-weight: $light;
+        }
+      }
+      &__like {
+        margin: 1.438rem 1.563rem;
+        height: 21px;
+        width: 23px;
+        display: inline-block;
+        background-image: url("../../assets/images/icons/heart-outlined-icon.svg");
+        &::before {
+          content: "";
+          display: block;
+          height: 21px;
+          width: 23px;
+          background-image: url("../../assets/images/icons/heart-full-linear-gradient-icon.svg");
+          opacity: 0;
+          transition: opacity 0.3s;
+        }
+      }
+    }
+  }
+}
+
+input:checked + .restaurants__card__info__like::before {
+  opacity: 1;
+}
+input[type="checkbox"] {
+  display: none;
 }
