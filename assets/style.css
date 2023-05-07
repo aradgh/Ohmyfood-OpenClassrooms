@@ -161,6 +161,7 @@
   margin: 1.438rem 1.563rem;
   height: 21px;
   width: 23px;
+  cursor: pointer;
   display: inline-block;
   background-image: url("../../assets/images/icons/heart-outlined-icon.svg");
 }
@@ -180,6 +181,34 @@ input:checked + .restaurants__card__info__like::before {
 
 input[type=checkbox] {
   display: none;
+}
+
+.footer {
+  color: white;
+  background-color: #353535;
+  padding: 1.375rem 1.563rem;
+}
+.footer__title {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+.footer__nav {
+  list-style-type: none;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.438rem;
+}
+.footer__nav__link {
+  text-decoration: none;
+  color: inherit;
+}
+.footer__nav__link--firsticon {
+  margin-left: 10px;
+}
+.footer__nav__link--secondicon {
+  margin-left: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */
