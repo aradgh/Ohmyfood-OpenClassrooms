@@ -113,6 +113,9 @@
 .restaurants {
   padding: 3.375rem 1.125rem 4.125rem;
   background-color: $background-color-primary;
+  @media screen and (min-width: 768px) {
+    padding: 1.875rem;
+  }
   &__container {
     @media screen and (min-width: 768px) {
       display: flex;
@@ -127,7 +130,7 @@
     margin-left: 0.125rem;
     @media screen and (min-width: 768px) {
       margin-left: 3.125rem;
-      margin-bottom: -1.375rem;
+      margin-bottom: -1.875rem;
       width: 100%;
     }
   }
