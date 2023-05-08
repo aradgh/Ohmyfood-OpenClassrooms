@@ -266,6 +266,14 @@ input[type=checkbox] {
   background-color: #353535;
   padding: 1.375rem 1.563rem;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 1.875rem;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2.5rem;
+  }
+}
 .footer__title {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
@@ -277,6 +285,14 @@ input[type=checkbox] {
   display: flex;
   flex-direction: column;
   gap: 0.438rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__nav {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 0;
+  }
 }
 .footer__nav__link {
   text-decoration: none;
