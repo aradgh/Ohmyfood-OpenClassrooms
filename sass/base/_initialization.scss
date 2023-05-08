@@ -1,0 +1,11 @@
+* {
+  font-family: $default;
+}
+
+*,
+::before,
+::after { //TODO : Vérifier à la fin si ::before et ::after servent à quelque chose dans ce projet
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
