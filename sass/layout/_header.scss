@@ -5,9 +5,15 @@
   justify-content: center;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   position: relative;
-    &__title {
-        font-family: $title;
-        font-size: $header-title;
-        font-weight: $regular;
+  @media screen and (min-width: 768px) {
+    height: 5.813rem;
+  }
+  &__title {
+    font-family: $title;
+    font-size: $header-title;
+    font-weight: $regular;
+    @media screen and (min-width: 768px) {
+      font-size: 2.33rem;
     }
+  }
 }
