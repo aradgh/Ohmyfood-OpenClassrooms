@@ -255,16 +255,11 @@
   opacity: 0;
   transition: opacity 0.8s;
 }
-.restaurants__card__info__like--menuPage {
-  margin: 5px 24px 0 0;
-}
-
-input:checked + .restaurants__card__info__like::before {
+.restaurants__card__info__like:hover::before {
   opacity: 1;
 }
-
-input[type=checkbox] {
-  display: none;
+.restaurants__card__info__like--menuPage {
+  margin: 5px 24px 0 0;
 }
 
 .footer {
