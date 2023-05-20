@@ -1,0 +1,127 @@
+.header {
+  position: relative;
+  &__return {
+    color: $background-color-tertiary;
+    position: absolute;
+    left: 6%;
+    i {
+      font-size: $icon;
+    }
+  }
+}
+
+.banner {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+}
+
+@keyframes appear {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.menu {
+  background-color: $background-color-primary;
+  border-radius: 40px 40px 0px 0px;
+  padding: 1.938rem 1.063rem;
+  margin-top: -58px;
+  z-index: 1;
+  position: relative;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+      font-family: $title;
+      font-weight: $regular;
+      font-size: $page-title;
+    }
+  }
+  &__starter,
+  &__dish,
+  &__dessert {
+    h3 {
+      font-weight: $light;
+      text-transform: uppercase;
+      position: relative;
+      margin-bottom: 1.875rem;
+      margin-top: 2.5rem;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -0.625rem;
+        width: 3.125rem;
+        height: 0.25rem;
+        background-color: $color-secondary;
+      }
+    }
+  }
+  &__meal {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    border-radius: 15.0431px;
+    cursor: pointer;
+    margin-top: 1.25rem;
+    overflow: hidden;
+    animation: appear 1s both;
+    @for $i from 2 through 5 {
+      &:nth-child(#{$i}) {
+        animation-delay: 100ms * $i;
+      }
+    }
+    &__description {
+      white-space: nowrap;
+      overflow: hidden;
+      padding: 0.75rem 0.938rem;
+      padding-right: 0;
+      h4 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: $subtitle;
+        font-weight: $medium;
+      }
+      p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: $description;
+        font-weight: $light;
+      }
+    }
+    &__price {
+      display: flex;
+      align-items: flex-end;
+      font-size: $description;
+      font-weight: $bold;
+      padding: 0.75rem 0.938rem;
+      padding-left: 0;
+      margin-left: auto;
+    }
+    &__check {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 1rem;
+      font-size: $icon;
+      width: 4.375rem;
+      color: white;
+      background-color: $color-secondary;
+      border-radius: 0 15.0431px 15.0431px 0;
+      margin-right: -4.375rem;
+      transition: margin-right 0.4s ease-in-out;
+    }
+    &:hover &__check {
+      margin-right: 0;
+    }
+  }
+  &__order {
+    text-align: center;
+  }
+}
