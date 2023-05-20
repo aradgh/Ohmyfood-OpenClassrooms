@@ -325,8 +325,13 @@ input[type=checkbox] {
 
 .banner {
   width: 100%;
-  height: 275px;
+  height: 17.188rem;
   object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .banner {
+    height: 23.938rem;
+  }
 }
 
 @keyframes appear {
@@ -347,14 +352,36 @@ input[type=checkbox] {
   z-index: 1;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .menu {
+    max-width: 65.938rem;
+    margin: -58px auto 0;
+    padding: 3.188rem 1.063rem 1.938rem;
+  }
+}
 .menu__header {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+}
+@media screen and (min-width: 768px) {
+  .menu__header {
+    justify-content: center;
+    gap: 1.5rem;
+  }
 }
 .menu__header__title {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
   font-size: 1.75rem;
+}
+@media screen and (min-width: 768px) {
+  .menu__starter, .menu__dish, .menu__dessert {
+    display: flex;
+    flex-direction: column;
+    max-width: 39.625rem;
+    margin: 0 auto;
+  }
 }
 .menu__starter h3, .menu__dish h3, .menu__dessert h3 {
   font-weight: 300;
@@ -362,6 +389,12 @@ input[type=checkbox] {
   position: relative;
   margin-bottom: 1.875rem;
   margin-top: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .menu__starter h3, .menu__dish h3, .menu__dessert h3 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
 }
 .menu__starter h3::before, .menu__dish h3::before, .menu__dessert h3::before {
   content: "";
@@ -371,6 +404,13 @@ input[type=checkbox] {
   height: 0.25rem;
   background-color: #99e2d0;
 }
+@media screen and (min-width: 768px) {
+  .menu__starter h3::before, .menu__dish h3::before, .menu__dessert h3::before {
+    width: 2.5rem;
+    height: 0.2rem;
+    bottom: -0.5rem;
+  }
+}
 .menu__meal {
   display: flex;
   justify-content: space-between;
@@ -378,6 +418,7 @@ input[type=checkbox] {
   border-radius: 15.0431px;
   cursor: pointer;
   margin-top: 1.25rem;
+  background-color: white;
   overflow: hidden;
   animation: appear 1s both;
 }
@@ -392,6 +433,11 @@ input[type=checkbox] {
 }
 .menu__meal:nth-child(5) {
   animation-delay: 500ms;
+}
+@media screen and (min-width: 768px) {
+  .menu__meal {
+    margin-top: 0.75rem;
+  }
 }
 .menu__meal__description {
   white-space: nowrap;
