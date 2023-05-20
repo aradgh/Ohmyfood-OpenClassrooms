@@ -12,8 +12,11 @@
 
 .banner {
   width: 100%;
-  height: 275px;
+  height: 17.188rem;
   object-fit: cover;
+  @media screen and (min-width: 768px) {
+    height: 23.938rem;
+  }
 }
 
 @keyframes appear {
@@ -34,10 +37,19 @@
   margin-top: -58px;
   z-index: 1;
   position: relative;
+  @media screen and (min-width: 768px) {
+    max-width: 65.938rem;
+    margin: -58px auto 0;
+    padding: 3.188rem 1.063rem 1.938rem;
+  }
   &__header {
     display: flex;
     justify-content: space-between;
-
+    align-items: baseline;
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+      gap: 1.5rem;
+    }
     &__title {
       font-family: $title;
       font-weight: $regular;
@@ -47,12 +59,22 @@
   &__starter,
   &__dish,
   &__dessert {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      max-width: 39.625rem;
+      margin: 0 auto;
+    }
     h3 {
       font-weight: $light;
       text-transform: uppercase;
       position: relative;
       margin-bottom: 1.875rem;
       margin-top: 2.5rem;
+      @media screen and (min-width: 768px) {
+        font-size: $base;
+        margin-bottom: 0.75rem;
+      }
       &::before {
         content: "";
         position: absolute;
@@ -60,6 +82,11 @@
         width: 3.125rem;
         height: 0.25rem;
         background-color: $color-secondary;
+        @media screen and (min-width: 768px) {
+          width: 2.5rem;
+          height: 0.2rem;
+          bottom: -0.5rem;
+        }
       }
     }
   }
@@ -70,12 +97,16 @@
     border-radius: 15.0431px;
     cursor: pointer;
     margin-top: 1.25rem;
+    background-color: white;
     overflow: hidden;
     animation: appear 1s both;
     @for $i from 2 through 5 {
       &:nth-child(#{$i}) {
         animation-delay: 100ms * $i;
       }
+    }
+    @media screen and (min-width: 768px) {
+      margin-top: 0.75rem;
     }
     &__description {
       white-space: nowrap;
