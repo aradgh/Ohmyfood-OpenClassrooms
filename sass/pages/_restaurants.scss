@@ -56,9 +56,13 @@
       font-size: $page-title;
     }
   }
-  &__starter,
-  &__dish,
-  &__dessert {
+  &__course {
+    animation: appear 1s both;
+    @for $i from 2 through 4 {
+      &:nth-child(#{$i}) {
+        animation-delay: 350ms * $i;
+      }
+    }
     @media screen and (min-width: 768px) {
       display: flex;
       flex-direction: column;
@@ -99,12 +103,6 @@
     margin-top: 1.25rem;
     background-color: white;
     overflow: hidden;
-    animation: appear 1s both;
-    @for $i from 2 through 5 {
-      &:nth-child(#{$i}) {
-        animation-delay: 100ms * $i;
-      }
-    }
     @media screen and (min-width: 768px) {
       margin-top: 0.75rem;
     }
