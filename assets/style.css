@@ -255,16 +255,11 @@
   opacity: 0;
   transition: opacity 0.8s;
 }
-.restaurants__card__info__like--menuPage {
-  margin: 5px 24px 0 0;
-}
-
-input:checked + .restaurants__card__info__like::before {
+.restaurants__card__info__like:hover::before {
   opacity: 1;
 }
-
-input[type=checkbox] {
-  display: none;
+.restaurants__card__info__like--menuPage {
+  margin: 5px 24px 0 0;
 }
 
 .footer {
@@ -375,15 +370,27 @@ input[type=checkbox] {
   font-weight: 400;
   font-size: 1.75rem;
 }
+.menu__course {
+  animation: appear 1s both;
+}
+.menu__course:nth-child(2) {
+  animation-delay: 700ms;
+}
+.menu__course:nth-child(3) {
+  animation-delay: 1050ms;
+}
+.menu__course:nth-child(4) {
+  animation-delay: 1400ms;
+}
 @media screen and (min-width: 768px) {
-  .menu__starter, .menu__dish, .menu__dessert {
+  .menu__course {
     display: flex;
     flex-direction: column;
     max-width: 39.625rem;
     margin: 0 auto;
   }
 }
-.menu__starter h3, .menu__dish h3, .menu__dessert h3 {
+.menu__course h3 {
   font-weight: 300;
   text-transform: uppercase;
   position: relative;
@@ -391,12 +398,12 @@ input[type=checkbox] {
   margin-top: 2.5rem;
 }
 @media screen and (min-width: 768px) {
-  .menu__starter h3, .menu__dish h3, .menu__dessert h3 {
+  .menu__course h3 {
     font-size: 1rem;
     margin-bottom: 0.75rem;
   }
 }
-.menu__starter h3::before, .menu__dish h3::before, .menu__dessert h3::before {
+.menu__course h3::before {
   content: "";
   position: absolute;
   bottom: -0.625rem;
@@ -405,7 +412,7 @@ input[type=checkbox] {
   background-color: #99e2d0;
 }
 @media screen and (min-width: 768px) {
-  .menu__starter h3::before, .menu__dish h3::before, .menu__dessert h3::before {
+  .menu__course h3::before {
     width: 2.5rem;
     height: 0.2rem;
     bottom: -0.5rem;
@@ -420,19 +427,6 @@ input[type=checkbox] {
   margin-top: 1.25rem;
   background-color: white;
   overflow: hidden;
-  animation: appear 1s both;
-}
-.menu__meal:nth-child(2) {
-  animation-delay: 200ms;
-}
-.menu__meal:nth-child(3) {
-  animation-delay: 300ms;
-}
-.menu__meal:nth-child(4) {
-  animation-delay: 400ms;
-}
-.menu__meal:nth-child(5) {
-  animation-delay: 500ms;
 }
 @media screen and (min-width: 768px) {
   .menu__meal {
