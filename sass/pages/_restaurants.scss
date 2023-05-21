@@ -21,7 +21,7 @@
 
 @keyframes appear {
   from {
-    transform: translateY(20px);
+    transform: translateY(1.25rem);
     opacity: 0;
   }
   to {
@@ -34,12 +34,12 @@
   background-color: $background-color-primary;
   border-radius: 40px 40px 0px 0px;
   padding: 1.938rem 1.063rem;
-  margin-top: -58px;
+  margin-top: -3.625rem;
   z-index: 1;
   position: relative;
   @media screen and (min-width: 768px) {
     max-width: 65.938rem;
-    margin: -58px auto 0;
+    margin: -3.625rem auto 0;
     padding: 3.188rem 1.063rem 1.938rem;
   }
   &__header {

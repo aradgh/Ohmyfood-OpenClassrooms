@@ -6,7 +6,7 @@
   background: $background-color-secondary;
 
   &__city {
-    margin-left: 17px; //J'ai mis un écart fixe en pixels car sur la version desktop, l'espacement reste le même. Donc pas besoin de valeur en em ou rem.
+    margin-left: 1.063rem;
     font-weight: $medium;
   }
 }
@@ -84,13 +84,13 @@
     flex-direction: row-reverse;
     justify-content: flex-end;
     align-items: center;
-    gap: 23px;
+    gap: 1.438rem;
     font-weight: $medium;
-    height: 72.38px;
+    height: 4.524rem;
     background: $background-color-primary;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
-    margin-top: 25px;
+    margin-top: 1.563rem;
     @media screen and (min-width: 768px) {
       width: 30%;
     }
@@ -103,14 +103,14 @@
     &__number {
       background-color: #9356dc;
       color: white;
-      font-size: 14.18px;
-      width: 24px;
-      height: 24px;
+      font-size: 0.886rem;
+      width: 1.5rem;
+      height: 1.5rem;
       display: flex;
       align-items: center;
       justify-content: center;
       border-radius: 12px;
-      margin-left: -12px;
+      margin-left: -0.75rem;
     }
   }
 }
@@ -126,7 +126,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
-      gap: 50px;
+      gap: 3.125rem;
       max-width: 71.25rem;
       margin: 0 auto;
     }
@@ -142,7 +142,7 @@
   &__card {
     display: flex;
     flex-direction: column;
-    margin-top: 18px;
+    margin-top: 1.125rem;
     height: 15.688rem;
     background: white;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -189,16 +189,16 @@
       }
       &__like {
         margin: 1.438rem 1.563rem;
-        height: 21px;
-        width: 23px;
+        height: 1.313rem;
+        width: 1.438rem;
         cursor: pointer;
         display: inline-block;
         background-image: url("images/icons/heart-outlined-icon.svg");
         &::before {
           content: "";
           display: block;
-          height: 21px;
-          width: 23px;
+          height: 1.313rem;
+          width: 1.438rem;
           background-image: url("images/icons/heart-full-linear-gradient-icon.svg");
           opacity: 0;
           transition: opacity 0.8s;
@@ -207,7 +207,7 @@
           opacity: 1;
         }
         &--menuPage {
-          margin: 5px 24px 0 0;
+          margin: 0.313rem 1.5rem 0 0;
         }
       }
     }
@@ -247,10 +247,10 @@
       text-decoration: none;
       color: inherit;
       &--firsticon {
-        margin-left: 10px;
+        margin-left: 0.625rem;
       }
       &--secondicon {
-        margin-left: 4px;
+        margin-left: 0.25rem;
       }
     }
   }
