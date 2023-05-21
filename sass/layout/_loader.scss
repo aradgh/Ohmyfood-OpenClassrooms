@@ -1,22 +1,17 @@
 .loader {
+  @include flex-center;
   position: fixed;
   width: 100%;
   height: 100%;
   background-color: $background-color-primary;
   pointer-events: none;
   z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   animation: visibility 3s ease forwards;
   .container {
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     width: 30rem;
     .circle {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex-center;
       width: 6.25rem;
       height: 6.25rem;
       @media screen and (min-width: 768px) {
@@ -41,68 +36,6 @@
         background: $color-secondary;
         box-shadow: 0px 4px 20px $color-secondary;
       }
-    }
-  }
-  @keyframes move-1 {
-    0% {
-      z-index: 3;
-      transform: translateX(0);
-    }
-    25% {
-      z-index: 3;
-      transform: translateX(4.375rem);
-    }
-    50% {
-      z-index: 3;
-      transform: translateX(0);
-    }
-
-    50.1% {
-      z-index: 1;
-      transform: translateX(0);
-    }
-    75% {
-      z-index: 1;
-      transform: translateX(4.375rem);
-    }
-    100% {
-      z-index: 1;
-      transform: translateX(0);
-    }
-  }
-  @keyframes move-3 {
-    0% {
-      z-index: 1;
-      transform: translateX(0);
-    }
-    25% {
-      z-index: 1;
-      transform: translateX(-4.375rem);
-    }
-    50% {
-      z-index: 1;
-      transform: translateX(0);
-    }
-
-    50.1% {
-      z-index: 3;
-      transform: translateX(0);
-    }
-    75% {
-      z-index: 3;
-      transform: translateX(-4.375rem);
-    }
-    100% {
-      z-index: 3;
-      transform: translateX(0);
-    }
-  }
-  @keyframes visibility {
-    90% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
     }
   }
 }

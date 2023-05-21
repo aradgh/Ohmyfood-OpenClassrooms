@@ -1,0 +1,28 @@
+.hero {
+  &__btn {
+    font-weight: $medium;
+    font-size: $base;
+    padding: 0.813rem 1.172rem;
+    margin: 1.688rem 0 1.063rem;
+    border-radius: 25px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background: $button-gradient;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease-in-out;
+    @media screen and (min-width: 768px) {
+      margin: 1.9rem 0 0;
+    }
+
+    &:hover {
+      background: $button-gradient-hover;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    &--menuPage {
+      padding: 1rem 3rem;
+      margin-top: 2.5rem;
+    }
+  }
+}

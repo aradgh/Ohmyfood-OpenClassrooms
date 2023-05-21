@@ -1,7 +1,17 @@
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/animations";
+
 @import "./base/initialization";
+
+@import "./composants/button";
+@import "./composants/tutorial_steps";
+@import "./composants/restaurant_card";
+@import "./composants/restaurant_meal";
+
 @import "./layout/header";
-@import "./layout/main";
+@import "./layout/footer";
 @import "./layout/loader";
+
+@import "./pages/index";
 @import "./pages/restaurants";
