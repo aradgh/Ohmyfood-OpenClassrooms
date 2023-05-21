@@ -1,0 +1,56 @@
+.menu {
+  &__meal {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    border-radius: 15.0431px;
+    cursor: pointer;
+    margin-top: 1.25rem;
+    background-color: white;
+    overflow: hidden;
+    @media screen and (min-width: 768px) {
+      margin-top: 0.75rem;
+    }
+    &__description {
+      white-space: nowrap;
+      overflow: hidden;
+      padding: 0.75rem 0.938rem;
+      padding-right: 0;
+      h4 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: $subtitle;
+        font-weight: $medium;
+      }
+      p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: $description;
+        font-weight: $light;
+      }
+    }
+    &__price {
+      display: flex;
+      align-items: flex-end;
+      font-size: $description;
+      font-weight: $bold;
+      padding: 0.75rem 0.938rem;
+      padding-left: 0;
+      margin-left: auto;
+    }
+    &__check {
+      @include flex-center;
+      padding: 0 1rem;
+      font-size: $icon;
+      width: 4.375rem;
+      color: white;
+      background-color: $color-secondary;
+      border-radius: 0 15.0431px 15.0431px 0;
+      margin-right: -4.375rem;
+      transition: margin-right 0.4s ease-in-out;
+    }
+    &:hover &__check {
+      margin-right: 0;
+    }
+  }
+}

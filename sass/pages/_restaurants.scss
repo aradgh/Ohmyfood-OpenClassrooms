@@ -19,27 +19,16 @@
   }
 }
 
-@keyframes appear {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 .menu {
   background-color: $background-color-primary;
   border-radius: 40px 40px 0px 0px;
   padding: 1.938rem 1.063rem;
-  margin-top: -58px;
+  margin-top: -3.625rem;
   z-index: 1;
   position: relative;
   @media screen and (min-width: 768px) {
     max-width: 65.938rem;
-    margin: -58px auto 0;
+    margin: -3.625rem auto 0;
     padding: 3.188rem 1.063rem 1.938rem;
   }
   &__header {
@@ -92,62 +81,6 @@
           bottom: -0.5rem;
         }
       }
-    }
-  }
-  &__meal {
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-    border-radius: 15.0431px;
-    cursor: pointer;
-    margin-top: 1.25rem;
-    background-color: white;
-    overflow: hidden;
-    @media screen and (min-width: 768px) {
-      margin-top: 0.75rem;
-    }
-    &__description {
-      white-space: nowrap;
-      overflow: hidden;
-      padding: 0.75rem 0.938rem;
-      padding-right: 0;
-      h4 {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-size: $subtitle;
-        font-weight: $medium;
-      }
-      p {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-size: $description;
-        font-weight: $light;
-      }
-    }
-    &__price {
-      display: flex;
-      align-items: flex-end;
-      font-size: $description;
-      font-weight: $bold;
-      padding: 0.75rem 0.938rem;
-      padding-left: 0;
-      margin-left: auto;
-    }
-    &__check {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0 1rem;
-      font-size: $icon;
-      width: 4.375rem;
-      color: white;
-      background-color: $color-secondary;
-      border-radius: 0 15.0431px 15.0431px 0;
-      margin-right: -4.375rem;
-      transition: margin-right 0.4s ease-in-out;
-    }
-    &:hover &__check {
-      margin-right: 0;
     }
   }
   &__order {

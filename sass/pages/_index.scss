@@ -1,0 +1,68 @@
+.hero {
+  background-color: $background-color-primary;
+  text-align: center;
+  padding: 2.5rem;
+  @media screen and (min-width: 768px) {
+    padding: 1.875rem;
+  }
+  &__title {
+    padding: 0 0.75rem;
+    height: 4.25rem;
+    @media screen and (min-width: 768px) {
+      font-size: 2.5rem;
+      height: 5rem;
+    }
+  }
+
+  &__subtitle {
+    font-weight: $light;
+    font-size: $subtitle;
+  }
+}
+
+.tutorial {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem 2.032rem 4.25rem;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 71.25rem;
+    margin: 0 auto;
+  }
+  &__title {
+    margin-left: -0.875rem;
+    @media screen and (min-width: 768px) {
+      margin-left: 1.063rem;
+      width: 100%;
+    }
+  }
+}
+
+.restaurants {
+  padding: 3.375rem 1.125rem 4.125rem;
+  background-color: $background-color-primary;
+  @media screen and (min-width: 768px) {
+    padding: 1.875rem;
+  }
+  &__container {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 3.125rem;
+      max-width: 71.25rem;
+      margin: 0 auto;
+    }
+  }
+  &__title {
+    margin-left: 0.125rem;
+    @media screen and (min-width: 768px) {
+      margin-left: 3.125rem;
+      margin-bottom: -1.875rem;
+      width: 100%;
+    }
+  }
+}
