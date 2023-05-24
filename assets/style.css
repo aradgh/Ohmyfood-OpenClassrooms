@@ -546,13 +546,13 @@
   animation: appear 1s both;
 }
 .menu__course:nth-child(2) {
-  animation-delay: 700ms;
+  animation-delay: 1000ms;
 }
 .menu__course:nth-child(3) {
-  animation-delay: 1050ms;
+  animation-delay: 1500ms;
 }
 .menu__course:nth-child(4) {
-  animation-delay: 1400ms;
+  animation-delay: 2000ms;
 }
 @media screen and (min-width: 768px) {
   .menu__course {
